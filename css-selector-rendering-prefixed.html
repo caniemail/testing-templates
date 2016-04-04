@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"> <!--xmlns  fix Outlook Scaling-->
+<head>
+<!--     
+ , _                           
+/|/_)      o |\_|_    |)       
+ |  \|  |  | |/ |     |/\_|  | 
+ |(_/ \/|_/|/|_/|_/    \/  \/|/...
+                             (| 
+
+              RebelmailReb            
+          RebelmailRebelmailR
+        RebelmailRebelmailRebel        
+      Rebelma             Rebelma       
+     Rebelm                 Rebelm      
+    Rebel    RebelmailRebe    Rebel     
+   Rebel     RebelmailRebelm   Rebel    
+   Rebe      RebelmailRebelma   Rebe  
+  Rebel     Rebel        Rebe    Rebe   
+  Rebe      Rebe         Rebe    Rebe   
+  Rebe      RebelmailRebelmai    Rebel  
+  Rebe      RebelmailRebelma     Rebel  
+  Rebe     Rebe       Rebe       Rebel
+  Rebe     Rebe       Rebe       Rebe   
+  Rebel    Rebe       Rebel     Rebel   
+   Rebel  Rebel        Rebel  Rebelm    
+    Rebel               RebelmailRe    
+     Rebel               Rebelmail       
+      Rebelm                            
+       Rebelmail       Rebelmail         
+         RebelmailRebelmailRebe          
+            RebelmailRebelma    
+
+              __         __                _ __
+   ________  / /_  ___  / /___ ___  ____ _(_) /
+  / ___/ _ \/ __ \/ _ \/ / __ `__ \/ __ `/ / / 
+ / /  /  __/ /_/ /  __/ / / / / / / /_/ / / /  
+/_/   \___/_.___/\___/_/_/ /_/ /_/\__,_/_/_/   
+
+-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--Fix Outlook Scaling-->  
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->  
+  
+<title>CSS rendering test</title>
+
+<style>
+body {
+	text-size-adjust: none !important;
+	-ms-text-size-adjust: none !important;
+	-webkit-text-size-adjust: none !important;
+}
+.ExternalClass * {
+	line-height: 100%;
+} 
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin: 0 auto;
+}
+table table table {
+	table-layout: auto; 
+} 
+
+
+* .class{
+	color:red;
+}
+* #id{
+	color:red;
+}
+* .★{
+	color:red;
+}
+* #★{
+	color:red;
+}
+* .class1, #id1{
+	color:red;
+}
+* .class2 .class3{
+	color:red;
+}
+* p{
+	color:red;
+}
+* h1, *  h2{
+	color:red;	
+}
+* span p{
+	color:blue;
+}
+* div > p{
+	color:green;
+}
+* div + p{
+	color:blue;
+}
+* h1 ~ h3{
+	color: red;
+}
+* {
+	font-size:20px;
+}
+* a:link {
+    font-family: "Courier New", Courier, monospace;
+}
+* a:visited {
+    color:green;
+}
+* a:hover {
+    color: yellow;
+}
+* a:active {
+    color: blue;
+}
+* [id]{
+	color:blue;
+}
+* [id=id2]{
+	color:green;
+}
+* [id$=end]{
+	color: red;
+}
+* [id|=start]{
+	color:green;
+}
+* [id^=Xid]{
+	color: red;
+}
+* [id~=cont]{
+	color: red;
+}
+* [id*=sub]{
+	color: red;
+}
+* a[accesskey=t]{
+	color: red;
+}
+* [class=test]{
+	color: red;
+}
+* [contenteditable=true]{
+	color: red; 
+}
+* [contextmenu=test]{
+	color: red; 
+}
+* [data-name=test]{
+	color: red; 
+}
+* [dir=rtl]{
+	color: red;
+}
+* [draggable=true]{
+	color: red;
+}
+* [dropzone=copy]{
+	color: red;
+}
+* [hidden]{
+	color: red;
+}
+* [lang=fr]{
+	color: red;
+}
+* [spellcheck=true]{
+	color: red;
+}
+* [style]{
+	color: red;
+}
+* a[tabindex]{
+	color: red;
+}
+* [title=test]{
+	color: red;
+}
+* [translate=no]{
+	color: red;
+}
+* em::after{
+	content: "- em::after";
+	color:black;
+}
+* em::before{
+	content: "em::before -";
+	color:black;
+}
+* :checked{
+	height: 20px;
+    width: 50px;
+}
+* :checked+span{
+	color:red;
+	background:red;
+	color:green;
+}
+* div:empty {
+    width: 100px;
+    height: 20px;
+    background: #ff0000;
+}
+* input:enabled {
+	background:green;
+	color:red;
+}
+* li:first-child{
+    color: green;
+}
+* li::first-letter{
+	color:red;
+	font-weight: bold;
+}
+* li:nth-child(3){
+	color:blue;
+}
+* li:nth-of-type(4){
+	color:red;
+}
+* li:nth-last-child(2){
+	color:yellow;
+}
+* li:last-child{
+	color:red;	
+}
+* p::first-line{
+	font-family: "Courier New", Courier, monospace;
+}
+* * strong:first-of-type{
+	color: red;
+}
+* * input:focus {
+	background:blue;
+	color:red;
+}
+* input:in-range {
+    border: 2px solid red;
+}
+* input:out-of-range{
+	border: 2px solid blue;
+}
+* input:invalid{
+	border: 2px solid red;
+}
+* input:valid{
+	border: 2px solid blue;
+}
+* p:lang(it) { 
+    background: yellow;
+}
+* p:nth-last-of-type(2){
+	color: green;
+}
+* p:last-of-type{
+	font-family: Arial, Helvetica, sans-serif;
+}
+* :not(p){
+	font-size:15px;
+}
+* h4:only-of-type{
+	color:red;
+}
+* li:only-child{
+	color: blue
+}
+* input:optional{
+	width:300px;
+}
+* input:-moz-read-only{
+	background:blue;
+}
+* input:read-only{
+	background:blue;
+}
+* input:-moz-read-write {
+    height:30px;
+}
+* input:read-write {
+    height:30px;
+}
+* input:required{
+	width: 250px;
+}
+* :root{
+	background: #f69413;
+}
+* ::-moz-selection {
+    color: red;
+    background: yellow;
+}
+* ::selection {
+    color: red; 
+    background: yellow;
+}
+* :target{
+	color: red; 
+    background: yellow;
+}
+</style>
+</head>
+<body>
+<style>
+* .class{
+	color:red;
+}
+* #id{
+	color:red;
+}
+* .★{
+	color:red;
+}
+* #★{
+	color:red;
+}
+* .class1, #id1{
+	color:red;
+}
+* .class2 .class3{
+	color:red;
+}
+* p{
+	color:red;
+}
+* h1, *  h2{
+	color:red;	
+}
+* span p{
+	color:blue;
+}
+* div > p{
+	color:green;
+}
+* div + p{
+	color:blue;
+}
+* h1 ~ h3{
+	color: red;
+}
+* {
+	font-size:20px;
+}
+* a:link {
+    font-family: "Courier New", Courier, monospace;
+}
+* a:visited {
+    color:green;
+}
+* a:hover {
+    color: yellow;
+}
+* a:active {
+    color: blue;
+}
+* [id]{
+	color:blue;
+}
+* [id=id2]{
+	color:green;
+}
+* [id$=end]{
+	color: red;
+}
+* [id|=start]{
+	color:green;
+}
+* [id^=Xid]{
+	color: red;
+}
+* [id~=cont]{
+	color: red;
+}
+* [id*=sub]{
+	color: red;
+}
+* a[accesskey=t]{
+	color: red;
+}
+* [class=test]{
+	color: red;
+}
+* [contenteditable=true]{
+	color: red; 
+}
+* [contextmenu=test]{
+	color: red; 
+}
+* [data-name=test]{
+	color: red; 
+}
+* [dir=rtl]{
+	color: red;
+}
+* [draggable=true]{
+	color: red;
+}
+* [dropzone=copy]{
+	color: red;
+}
+* [hidden]{
+	color: red;
+}
+* [lang=fr]{
+	color: red;
+}
+* [spellcheck=true]{
+	color: red;
+}
+* [style]{
+	color: red;
+}
+* a[tabindex]{
+	color: red;
+}
+* [title=test]{
+	color: red;
+}
+* [translate=no]{
+	color: red;
+}
+* em::after{
+	content: "- em::after";
+	color:black;
+}
+* em::before{
+	content: "em::before -";
+	color:black;
+}
+* :checked{
+	height: 20px;
+    width: 50px;
+}
+* :checked+span{
+	color:red;
+	background:red;
+	color:green;
+}
+* div:empty {
+    width: 100px;
+    height: 20px;
+    background: #ff0000;
+}
+* input:enabled {
+	background:green;
+	color:red;
+}
+* li:first-child{
+    color: green;
+}
+* li::first-letter{
+	color:red;
+	font-weight: bold;
+}
+* li:nth-child(3){
+	color:blue;
+}
+* li:nth-of-type(4){
+	color:red;
+}
+* li:nth-last-child(2){
+	color:yellow;
+}
+* li:last-child{
+	color:red;	
+}
+* p::first-line{
+	font-family: "Courier New", Courier, monospace;
+}
+* * strong:first-of-type{
+	color: red;
+}
+* * input:focus {
+	background:blue;
+	color:red;
+}
+* input:in-range {
+    border: 2px solid red;
+}
+* input:out-of-range{
+	border: 2px solid blue;
+}
+* input:invalid{
+	border: 2px solid red;
+}
+* input:valid{
+	border: 2px solid blue;
+}
+* p:lang(it) { 
+    background: yellow;
+}
+* p:nth-last-of-type(2){
+	color: green;
+}
+* p:last-of-type{
+	font-family: Arial, Helvetica, sans-serif;
+}
+* :not(p){
+	font-size:15px;
+}
+* h4:only-of-type{
+	color:red;
+}
+* li:only-child{
+	color: blue
+}
+* input:optional{
+	width:300px;
+}
+* input:-moz-read-only{
+	background:blue;
+}
+* input:read-only{
+	background:blue;
+}
+* input:-moz-read-write {
+    height:30px;
+}
+* input:read-write {
+    height:30px;
+}
+* input:required{
+	width: 250px;
+}
+* :root{
+	background: #f69413;
+}
+* ::-moz-selection {
+    color: red;
+    background: yellow;
+}
+* ::selection {
+    color: red; 
+    background: yellow;
+}
+* :target{
+	color: red; 
+    background: yellow;
+}
+</style>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+	<tr>
+		<td>
+			<table align="center" width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">   
+				<tr>
+					<td>
+						<span class="class">class RED</span><br>
+						<span id="id">id RED</span><br>
+						<span class="★">.★ RED</span><br>
+						<span id="★">#★ RED</span><br>
+						<span class="class1">class, id RED</span><br>
+						<span id="id1">class, id RED</span><br>
+						<span class="class2"><span class="class3">.class .class RED</span></span><br>
+						<p>p RED</p>
+						<h1>h1, h2 RED</h1>
+						<h2>h1, h2 RED</h2>
+						<span><p>span p BLUE</p></span>
+						<div><p>div > p GREEN</p></div>
+						<p>div + p BLUE</p>
+						<h3>h1 ~ h3 RED</h3>
+						* font-size:20px<br>
+						<a href="http://rebelmail.com">a:link font-family: "Courier New", Courier, monospace; <br>
+						a:visited <br>
+						a:hover GREEN
+						a:active BLUE</a><br>
+						<span id="na">[id] BLUE</span><br>
+						<span id="id2">[id=id2] GREEN</span><br>
+						<span id="id-end">[id$=end] RED</span><br>
+						<span id="start-id">[id|=start] GREEN</span><br>
+						<span id="Xid">[id|=start] RED</span><br>
+						<span id="id cont">[id~=cont] RED</span><br>
+						<span id="id-sub-id">[id*=sub] RED</span><br>
+						<a href="http://rebelmail.com" accesskey="t">[accesskey=t] RED</a><br>
+						<span class="test">[class=test] RED</span><br>
+						This email also tests HTML atributes<br>
+						<span contenteditable="true">[contenteditable=true] RED</span><br>
+						<span contextmenu="test">[contextmenu=test] RED</span><br>
+						<span data-name="test">[data-name=test] RED</span><br>
+						<span dir="rtl">[dir=rtl] RED</span><br>
+						<span draggable="true">[draggable=true] RED</span><br>
+						<span dropzone="copy">[dropzone=copy] RED</span><br>
+						<span hidden>[hidden] RED</span><br>
+						<span lang="fr">[lang=fr] ROUGE</span><br>
+						<span contenteditable="true" spellcheck="true">[spellcheck=true] RED</span><br>
+						<span style="padding-left:10px;">[style] RED</span><br>
+						<a href="http://rebelmail.com" tabindex="1">[tabindex=1] RED</a><br>
+						<a href="http://rebelmail.com" tabindex="2">[tabindex=1] test</a><br>
+						<span title="test">[title=test] RED</span><br>
+						<span translate="no">[translate=no] RED</span><br>
+						<em>before-after</em><br>
+						<input type="checkbox" checked="checked" value="test" required><span>:checked height20 width50 RED</span><br>
+						<input type="text" disabled="disabled" value="test" required>input:disabled BG RED+GREEN<br>
+						<div></div>div:empty BG RED<br>
+						<input type="text" value="test2">input:enabled BG GREEN+RED<br>
+						<ul>
+							<li>li:first-child GREEN</li>
+							<li>li:first-letter RED bold</li>
+							<li>li:nth-child(3) BLUE</li>
+							<li>li:nth-of-type(4) RED</li>
+							<li>:nth-last-child(2) YELLOW</li>
+							<li>li:last-child RED</li>
+						</ul>
+						<p>p::first-line font-family: "Courier New", Courier, monospace; <br>
+						second line <br>
+						third line
+						</p>
+						<strong>strong:first-of-type RED</strong><br>
+						<input type="text" value="test3" required>input:focus BG blue+red<br>
+						<input type="number" min="5" max="10" value="7" required>input:in-range BORDER RED (range 5-10)<br>
+						<input type="number" min="5" max="10" value="2" required>input:out-of-range BORDER BLUE (range 5-10)<br>
+						<input type="email" value="supportEmail" required>input:invalid BORDER RED<br>
+						<input type="email" value="support@Email.com" required>input:invalid BORDER BLUE<br>
+						<p lang="it">p:lang(it) YELLOW</p>
+						<span>:not(p) FONT-SIZE:15px;</span><br>
+						<h4>h4:only-of-type RED</h4>
+						<ol>
+							<li>li:only-child BLUE</li>
+						</ol>
+						<input type="text">input:optional WIDTH 300<br>
+						<input type="text" required>input:required WIDTH 250<br>
+						<input type="text" readonly required>input:read-only BACKGROUND BLUE<br>
+						<input type="text" required>input:read-write HEIGHT 30<br>
+						:root BACKGROUND: #f69413;<br>
+						::selection: BACKGROUND YELLOW COLOR RED<br>
+						<a href="#target">Jump to target</a>
+						<p id="target">:target BACKGROUND YELLOW COLOR RED</p>
+
+						<p>p:nth-last-of-type(2) GREEN</p>
+						<p>p:last-of-type font-family: Arial, Helvetica, sans-serif;</p>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

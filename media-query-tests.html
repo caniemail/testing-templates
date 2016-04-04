@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"> <!--xmlns  fix Outlook Scaling-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--Fix Outlook Scaling-->  
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->  
+  
+<title>media queries</title>
+
+<style>
+body {
+	text-size-adjust: none !important;
+	-ms-text-size-adjust: none !important;
+	-webkit-text-size-adjust: none !important;
+}
+.ExternalClass * {
+	line-height: 100%;
+} 
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin: 0 auto;
+}
+table table table {
+	table-layout: auto; 
+} 
+
+@media{
+	.media{
+		background: red;
+	}
+}
+@media all{
+	.media-all{
+		background: red;
+	}
+}
+@media aural{
+	.media-aural{
+		background: red;
+	}
+}
+@media braille{
+	.media-braille{
+		background: red;
+	}
+}
+@media embossed{
+	.media-embossed{
+		background: red;
+	}
+}
+@media handheld{
+	.media-handheld{
+		background: red;
+	}
+}
+@media print{
+	.media-print{
+		background: red;
+	}
+}
+@media projection{
+	.media-projection{
+		background: red;
+	}
+}
+@media screen{
+	.media-screen{
+		background: red;
+	}
+}
+@media speech{
+	.media-speech{
+		background: red;
+	}
+}
+@media tty{
+	.media-tty{
+		background: red;
+	}
+}
+@media tv{
+	.media-tv{
+		background: red;
+	}
+}
+@media rebel{
+	.media-rebel{
+		background: red;
+	}
+}
+
+@media screen and (height){
+	.media-height{
+		background: red;
+	}
+}
+@media screen and (width){
+	.media-width{
+		background: red;
+	}
+}
+@media screen and (device-height){
+	.media-device-height{
+		background: red;
+	}
+}
+@media screen and (device-width){
+	.media-device-width{
+		background: red;
+	}
+}
+@media screen and (orientation){
+	.media-orientation{
+		background: red;
+	}
+}
+@media screen and (aspect-ratio){
+	.media-aspect-ratio{
+		background: red;
+	}
+}
+@media screen and (device-aspect-ratio){
+	.media-device-aspect-ratio{
+		background: red;
+	}
+}
+@media screen and (color){
+	.media-color{
+		background: red;
+	}
+}
+@media screen and (color-index){
+	.media-color-index{
+		background: red;
+	}
+}
+@media screen and (monochrome){
+	.media-monochrome{
+		background: red;
+	}
+}
+@media screen and (scan){
+	.media-scan{
+		background: red;
+	}
+}
+@media screen and (grid){
+	.media-grid{
+		background: red;
+	}
+}
+@media screen and (rebelrebel){
+	.media-rebelrebel{
+		background: red;
+	}
+}
+
+@media screen{
+	@media screen{
+		.media-nested{
+			background: red;
+		}
+	}
+}
+
+@media screen{
+	@media screen{
+		@media screen{
+			.media-double-nested{
+				background: red;
+			}
+		}
+	}
+}
+
+@media screen and (animation){
+	.animation{
+		background:red;
+	}
+}
+@media screen and (-webkit-animation){
+	.webkit-animation{
+		background:red;
+	}
+}
+@media screen and (-moz-animation){
+	.moz-animation{
+		background:red;
+	}
+}
+@media screen and (-ms-animation){
+	.ms-animation{
+		background:red;
+	}
+}
+@media screen and (-o-animation){
+	.o-animation{
+		background:red;
+	}
+}
+
+@media screen and (transform-2d){
+	.transform-2d{
+		background:red;
+	}
+}
+@media screen and (-webkit-transform-2d){
+	.webkit-transform-2d{
+		background:red;
+	}
+}
+@media screen and (-moz-transform-2d){
+	.moz-transform-2d{
+		background:red;
+	}
+}
+@media screen and (-ms-transform-2d){
+	.ms-transform-2d{
+		background:red;
+	}
+}
+@media screen and (-o-transform-2d){
+	.o-transform-2d{
+		background:red;
+	}
+}
+
+@media screen and (transform-3d){
+	.transform-3d{
+		background:red;
+	}
+}
+@media screen and (-webkit-transform-3d){
+	.webkit-transform-3d{
+		background:red;
+	}
+}
+@media screen and (-moz-transform-3d){
+	.moz-transform-3d{
+		background:red;
+	}
+}
+@media screen and (-ms-transform-3d){
+	.ms-transform-3d{
+		background:red;
+	}
+}
+@media screen and (-o-transform-3d){
+	.o-transform-3d{
+		background:red;
+	}
+}
+
+@media screen and (transition){
+	.transition{
+		background:red;
+	}
+}
+@media screen and (-webkit-transition){
+	.webkit-transition{
+		background:red;
+	}
+}
+@media screen and (-moz-transition){
+	.moz-transition{
+		background:red;
+	}
+}
+@media screen and (-ms-transition){
+	.ms-transition{
+		background:red;
+	}
+}
+@media screen and (-o-transition){
+	.o-transition{
+		background:red;
+	}
+}
+
+@media screen and (device-pixel-ratio){
+	.device-pixel-ratio{
+		background:red;
+	}
+}
+@media screen and (-webkit-device-pixel-ratio){
+	.webkit-device-pixel-ratio{
+		background:red;
+	}
+}
+@media screen and (-moz-device-pixel-ratio){
+	.moz-device-pixel-ratio{
+		background:red;
+	}
+}
+@media screen and (-ms-device-pixel-ratio){
+	.ms-device-pixel-ratio{
+		background:red;
+	}
+}
+@media screen and (-o-device-pixel-ratio){
+	.o-device-pixel-ratio{
+		background:red;
+	}
+}
+
+@media screen and (high-contrast){
+	.high-contrast{
+		background:red;
+	}
+}
+@media screen and (-webkit-high-contrast){
+	.webkit-high-contrast{
+		background:red;
+	}
+}
+@media screen and (-moz-high-contrast){
+	.moz-high-contrast{
+		background:red;
+	}
+}
+@media screen and (-ms-high-contrast){
+	.ms-high-contrast{
+		background:red;
+	}
+}
+@media screen and (-o-high-contrast){
+	.o-high-contrast{
+		background:red;
+	}
+}
+
+@media screen and (hover){
+	.hover{
+		background:red;
+	}
+}
+@media screen and (-webkit-hover){
+	.webkit-hover{
+		background:red;
+	}
+}
+@media screen and (-moz-hover){
+	.moz-hover{
+		background:red;
+	}
+}
+@media screen and (-ms-hover){
+	.ms-hover{
+		background:red;
+	}
+}
+@media screen and (-o-hover){
+	.o-hover{
+		background:red;
+	}
+}
+
+@media screen and (luminosity){
+	.luminosity{
+		background:red;
+	}
+}
+@media screen and (-webkit-luminosity){
+	.webkit-luminosity{
+		background:red;
+	}
+}
+@media screen and (-moz-luminosity){
+	.moz-luminosity{
+		background:red;
+	}
+}
+@media screen and (-ms-luminosity){
+	.ms-luminosity{
+		background:red;
+	}
+}
+@media screen and (-o-luminosity){
+	.o-luminosity{
+		background:red;
+	}
+}
+
+@media screen and (pointer){
+	.pointer{
+		background:red;
+	}
+}
+@media screen and (-webkit-pointer){
+	.webkit-pointer{
+		background:red;
+	}
+}
+@media screen and (-moz-pointer){
+	.moz-pointer{
+		background:red;
+	}
+}
+@media screen and (-ms-pointer){
+	.ms-pointer{
+		background:red;
+	}
+}
+@media screen and (-o-pointer){
+	.o-pointer{
+		background:red;
+	}
+}
+
+@media screen and (resolution){
+	.resolution{
+		background:red;
+	}
+}
+@media screen and (-webkit-resolution){
+	.webkit-resolution{
+		background:red;
+	}
+}
+@media screen and (-moz-resolution){
+	.moz-resolution{
+		background:red;
+	}
+}
+@media screen and (-ms-resolution){
+	.ms-resolution{
+		background:red;
+	}
+}
+@media screen and (-o-resolution){
+	.o-resolution{
+		background:red;
+	}
+}
+
+@media screen and (touch-enabled){
+	.touch-enabled{
+		background:red;
+	}
+}
+@media screen and (-webkit-touch-enabled){
+	.webkit-touch-enabled{
+		background:red;
+	}
+}
+@media screen and (-moz-touch-enabled){
+	.moz-touch-enabled{
+		background:red;
+	}
+}
+@media screen and (-ms-touch-enabled){
+	.ms-touch-enabled{
+		background:red;
+	}
+}
+@media screen and (-o-touch-enabled){
+	.o-touch-enabled{
+		background:red;
+	}
+}
+
+@media screen and (touchscreen){
+	.touchscreen{
+		background:red;
+	}
+}
+@media screen and (-webkit-touchscreen){
+	.webkit-touchscreen{
+		background:red;
+	}
+}
+@media screen and (-moz-touchscreen){
+	.moz-touchscreen{
+		background:red;
+	}
+}
+@media screen and (-ms-touchscreen){
+	.ms-touchscreen{
+		background:red;
+	}
+}
+@media screen and (-o-touchscreen){
+	.o-touchscreen{
+		background:red;
+	}
+}
+
+@supports (color:red) {
+  .supports{
+    background:red;
+  }
+}
+@supports not (rebelmail) {
+  .supports-not{
+    background:red;
+  }
+}
+@supports ((display: -webkit-flex) or
+          (display: -moz-flex) or
+          (display: inline)) and (color:red) {
+  .supports-chain{
+    background:red;
+  }
+}
+</style>
+
+<style media="only screen and (max-width: 600px)">
+	.onstyle1{
+  background:red;
+  }
+</style>
+<style media="only screen and (min-width: 600px)">
+	.onstyle2{
+  background:red;
+  }
+</style>
+<style media="rebelmail">
+	.onstyle-broken{
+  background:red;
+  }
+</style>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" >
+	<tr>
+		<td>
+			<table align="center" width="600" class="outer" border="0" cellspacing="0" cellpadding="0">   
+				<tr>
+					<td>
+						<div class="media">media</div>
+						<div class="media-all">media-all</div>
+						<div class="media-aural">media-aural</div>
+						<div class="media-braille">media-braille</div>
+						<div class="media-embossed">media-embossed</div>
+						<div class="media-handheld">media-handheld</div>
+						<div class="media-print">media-print</div>
+						<div class="media-projection">media-projection</div>
+						<div class="media-screen">media-screen</div>
+						<div class="media-speech">media-speech</div>
+						<div class="media-tty">media-tty</div>
+						<div class="media-tv">media-tv</div>
+						<div class="media-rebel">media-rebel</div>
+
+						<div class="media-height">media-height</div>
+						<div class="media-width">media-width</div>
+						<div class="media-device-height">media-device-height</div>
+						<div class="media-device-width">media-device-width</div>
+						<div class="media-orientation">media-orientation</div>
+						<div class="media-aspect-ratio">media-aspect-ratio</div>
+						<div class="media-device-aspect-ratio">media-device-aspect-ratio</div>
+						<div class="media-color">media-color</div>
+						<div class="media-color-index">media-color-index</div>
+						<div class="media-monochrome">media-monochrome</div>
+						<div class="media-scan">media-scan</div>
+						<div class="media-grid">media-grid</div>
+						<div class="media-rebelrebel">media-rebelrebel</div>
+
+						<div class="media-nested">nested</div>
+						<div class="media-double-nested">double-nested</div>
+
+						<div class="animation">animation</div>
+						<div class="webkit-animation">-webkit-animation</div>
+						<div class="moz-animation">-moz-animation</div>
+						<div class="ms-animation">-ms-animation</div>
+						<div class="o-animation">-o-animation</div>
+
+						<div class="transform-2d">transform-2d</div>
+						<div class="webkit-transform-2d">-webkit-transform-2d</div>
+						<div class="moz-transform-2d">-moz-transform-2d</div>
+						<div class="ms-transform-2d">-ms-transform-2d</div>
+						<div class="o-transform-2d">-o-transform-2d</div>
+
+						<div class="transform-3d">transform-3d</div>
+						<div class="webkit-transform-3d">-webkit-transform-3d</div>
+						<div class="moz-transform-3d">-moz-transform-3d</div>
+						<div class="ms-transform-3d">-ms-transform-3d</div>
+						<div class="o-transform-3d">-o-transform-3d</div>
+
+						<div class="transition">transition</div>
+						<div class="webkit-transition">-webkit-transition</div>
+						<div class="moz-transition">-moz-transition</div>
+						<div class="ms-transition">-ms-transition</div>
+						<div class="o-transition">-o-transition</div>
+
+						<div class="device-pixel-ratio">device-pixel-ratio</div>
+						<div class="webkit-device-pixel-ratio">-webkit-device-pixel-ratio</div>
+						<div class="moz-device-pixel-ratio">-moz-device-pixel-ratio</div>
+						<div class="ms-device-pixel-ratio">-ms-device-pixel-ratio</div>
+						<div class="o-device-pixel-ratio">-o-device-pixel-ratio</div>
+
+						<div class="high-contrast">high-contrast</div>
+						<div class="webkit-high-contrast">-webkit-high-contrast</div>
+						<div class="moz-high-contrast">-moz-high-contrast</div>
+						<div class="ms-high-contrast">-ms-high-contrast</div>
+						<div class="o-high-contrast">-o-high-contrast</div>
+
+						<div class="hover">hover</div>
+						<div class="webkit-hover">-webkit-hover</div>
+						<div class="moz-hover">-moz-hover</div>
+						<div class="ms-hover">-ms-hover</div>
+						<div class="o-hover">-o-hover</div>
+
+						<div class="luminosity">luminosity</div>
+						<div class="webkit-luminosity">-webkit-luminosity</div>
+						<div class="moz-luminosity">-moz-luminosity</div>
+						<div class="ms-luminosity">-ms-luminosity</div>
+						<div class="o-luminosity">-o-luminosity</div>
+
+						<div class="pointer">pointer</div>
+						<div class="webkit-pointer">-webkit-pointer</div>
+						<div class="moz-pointer">-moz-pointer</div>
+						<div class="ms-pointer">-ms-pointer</div>
+						<div class="o-pointer">-o-pointer</div>
+
+						<div class="resolution">resolution</div>
+						<div class="webkit-resolution">-webkit-resolution</div>
+						<div class="moz-resolution">-moz-resolution</div>
+						<div class="ms-resolution">-ms-resolution</div>
+						<div class="o-resolution">-o-resolution</div>
+
+						<div class="touch-enabled">touch-enabled</div>
+						<div class="webkit-touch-enabled">-webkit-touch-enabled</div>
+						<div class="moz-touch-enabled">-moz-touch-enabled</div>
+						<div class="ms-touch-enabled">-ms-touch-enabled</div>
+						<div class="o-touch-enabled">-o-touch-enabled</div>
+
+						<div class="touchscreen">touchscreen</div>
+						<div class="webkit-touchscreen">-webkit-touchscreen</div>
+						<div class="moz-touchscreen">-moz-touchscreen</div>
+						<div class="ms-touchscreen">-ms-touchscreen</div>
+						<div class="o-touchscreen">-o-touchscreen</div>
+
+						<div class="supports">supports</div>
+						<div class="supports-not">supports-not</div>
+						<div class="supports-not">supports-chain</div>
+
+						<div class="onstyle1">onstyle</div>
+						<div class="onstyle2">onstyle</div>
+						<div class="onstyle-broken">onstyle-broken</div>
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

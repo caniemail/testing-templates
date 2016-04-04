@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"> <!--xmlns  fix Outlook Scaling-->
+<head>
+<!--     
+ , _                           
+/|/_)      o |\_|_    |)       
+ |  \|  |  | |/ |     |/\_|  | 
+ |(_/ \/|_/|/|_/|_/    \/  \/|/...
+                             (| 
+
+              RebelmailReb            
+          RebelmailRebelmailR
+        RebelmailRebelmailRebel        
+      Rebelma             Rebelma       
+     Rebelm                 Rebelm      
+    Rebel    RebelmailRebe    Rebel     
+   Rebel     RebelmailRebelm   Rebel    
+   Rebe      RebelmailRebelma   Rebe  
+  Rebel     Rebel        Rebe    Rebe   
+  Rebe      Rebe         Rebe    Rebe   
+  Rebe      RebelmailRebelmai    Rebel  
+  Rebe      RebelmailRebelma     Rebel  
+  Rebe     Rebe       Rebe       Rebel
+  Rebe     Rebe       Rebe       Rebe   
+  Rebel    Rebe       Rebel     Rebel   
+   Rebel  Rebel        Rebel  Rebelm    
+    Rebel               RebelmailRe    
+     Rebel               Rebelmail       
+      Rebelm                            
+       Rebelmail       Rebelmail         
+         RebelmailRebelmailRebe          
+            RebelmailRebelma    
+
+              __         __                _ __
+   ________  / /_  ___  / /___ ___  ____ _(_) /
+  / ___/ _ \/ __ \/ _ \/ / __ `__ \/ __ `/ / / 
+ / /  /  __/ /_/ /  __/ / / / / / / /_/ / / /  
+/_/   \___/_.___/\___/_/_/ /_/ /_/\__,_/_/_/   
+
+-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--Fix Outlook Scaling-->  
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->  
+  
+<title>CSS rendering test</title>
+
+<link rel="stylesheet" type="text/css" href="css-text.css">
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* need to look into this more when it's supported in browser */
+@font-feature-values 'Open Sans'{ 
+	@styleset {
+		test-style: 12;
+	}
+}
+
+table{
+	--size: 20px;
+	--color: #ff0000;
+}
+
+
+body {
+	text-size-adjust: none !important;
+	-ms-text-size-adjust: none !important;
+	-webkit-text-size-adjust: none !important;
+}
+.ExternalClass * {
+	line-height: 100%;
+} 
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin: 0 auto;
+}
+table table table {
+	table-layout: auto; 
+} 
+
+</style>
+</head>
+<body style="-ms-text-size-adjust: none !important; -webkit-text-size-adjust: none !important; text-size-adjust: none !important">
+<style type="text/css">
+body {
+text-size-adjust: none !important; -ms-text-size-adjust: none !important; -webkit-text-size-adjust: none !important;
+}
+</style>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f69413" style="--color: #ff0000; --size: 20px; border-collapse: collapse; margin: 0 auto; table-layout: fixed">
+	<tr>
+		<td>
+			<table align="center" width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="--color: #ff0000; --size: 20px; border-collapse: collapse; margin: 0 auto; table-layout: fixed">   
+				<tr>
+					<td>
+						<p style="color: blue">
+							color:blue;
+						</p>
+						<p style="color: #0000ff">
+							color:#0000ff;
+						</p>
+						<p style="color: rgb(0,0,255)">
+							color:rgb(255,0,0);
+						</p>
+						<p style="color: rgba(0,0,255,0.6)">
+							color:rgba(255,0,0,0.8);
+						</p>
+						<p style="color: var(--color)">
+							color: var(--color);
+						</p>		
+						<p style="-moz-column-count: 3; -moz-column-gap: 40px; -moz-column-rule: 2px outset #CCC; -moz-column-width: 100px; -webkit-column-count: 3; -webkit-column-gap: 40px; -webkit-column-rule: 2px outset #CCC; -webkit-column-width: 100px; column-count: 3; column-gap: 40px; column-rule: 2px outset #CCC; column-width: 100px">
+							Columns columns columns columns columns columns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit neque, tempus at justo sed.
+						</p>				
+						<p style="direction: rtl">
+							direction: rtl;
+						</p>
+						<p style="font: italic bold 20px Georgia, serif">
+							font:italic bold 20px Georgia, serif;
+						</p>
+						<p style="font-family: Arial, Helvetica, sans-serif">
+							font-family: Arial, Helvetica, sans-serif;
+						</p>
+						<p style="-moz-font-feature-settings: 'c2sc', 'smcp'; -webkit-font-feature-settings: 'c2sc', 'smcp'; font-feature-settings: 'c2sc', 'smcp'">
+							font-feature-settings: 'c2sc', 'smcp'; -webkit-font-feature-settings: 'c2sc', 'smcp'; -moz-font-feature-settings: 'c2sc', 'smcp';
+						</p>
+						<p style="-moz-font-kerning: none; -webkit-font-kerning: none; font-kerning: none">
+							font-kerning: none;
+						</p>
+						<p style="-moz-font-language-override: 'SRB'; -webkit-font-language-override: 'SRB'; font-language-override: 'SRB'">
+							font-language-override: "SRB";
+						</p>
+						<p style="font-size: 20px">
+							font-size:20px;
+						</p>
+						<p style="font-size: 0">
+							font-size:0;
+						</p>
+						<p style="font-size: 2em">
+							font-size:2em;
+						</p>
+						<p style="font-size: 200%">
+							font-size:200%;
+						</p>
+						<p style="font-size: 4vw">
+							font-size:4vw;
+						</p>
+						<p style="font-size: 4vh">
+							font-size:4vh;
+						</p>
+						<p style="font-size: calc(1em + 10px)">
+							font-size: calc(1em + 10px);
+						</p>
+						<p style="font-size: var(--size)">
+							font-size: var(--size);
+						</p>
+						<p style="font-size-adjust: 1.5">
+							font-size-adjust: 1.5;
+						</p>
+						<p style="font-stretch: extra-expanded">
+							font-stretch: extra-expanded;
+						</p>
+						<p><em style="font-style: normal">
+							class="font-style: normal;
+						</em></p>
+						<p style="font-style: italic">
+							class="font-style: italic;
+						</p>
+						<p style="font-style: oblique">
+							class="font-style: oblique;
+						</p>													
+						<p style="font-family: 'Open Sans'; font-synthesis: weight style">
+							font-synthesis: <strong>weight</strong> style;
+						</p>
+						<p style="font-variant: small-caps">
+							font-variant: small-caps;
+						</p>
+<p style="font-variant-alternate: styleset(test-style)">
+<!--need to read up more on this but it's getting late-->
+	font-variant-alternate: styleset(test-style);
+</p>
+						<p style="font-variant-caps: all-petite-caps">
+							font-variant-caps: all-petite-caps
+						</p>
+						<p style="font-variant-east-asian: simplified full-width">
+							font-variant-east-asian: simplified full-width;
+						</p>
+						<p style="-moz-font-variant-ligatures: common-ligatures; -webkit-font-variant-ligatures: common-ligatures; font-variant-ligatures: common-ligatures">
+							font-variant-ligatures: common-ligatures; -webkit-font-variant-ligatures: common-ligatures;<br>
+							fi fj ao bx
+						</p>
+						<p style="font-variant-numeric: ordinal">
+							font-variant-numeric: ordinal;<br>
+							1st 2nd
+						</p>
+						<p style="font-variant-position: sub">
+							font-variant-position: sub;
+						</p>
+						<p style="font-weight: bold">
+							font-weight: bold;
+						</p>
+						<p style="font-weight: 900">
+							font-weight: 900;
+						</p>
+						<p style="hanging-punctuation: first">
+							"hanging-punctuation: first;"
+						</p>
+						<p style="-moz-hyphens: manual; -ms-hyphens: manual; -webkit-hyphens: manual; hyphens: manual">
+							"hyphens: manual;-moz-hyphens: manual;"<br>
+							reallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreally&amp;hyphen;really­longword
+						</p>
+						<p style="letter-spacing: 2px">
+							letter-spacing: 2px;
+						</p>
+						<p style="letter-spacing: -2px">
+							letter-spacing: -2px;
+						</p>
+						<p style="letter-spacing: 2em">
+							letter-spacing: 2em;
+						</p>
+						<p style="letter-spacing: 20%">
+							letter-spacing: 20%;
+						</p>
+						<p style="letter-spacing: 4vw">
+							letter-spacing:4vw;
+						</p>
+						<p style="letter-spacing: 4vh">
+							letter-spacing:4vh;
+						</p>
+						<p style="letter-spacing: calc(1em + 10px)">
+							letter-spacing: calc(1em + 10px);
+						</p>
+						<p style="letter-spacing: var(--size)">
+							letter-spacing: var(--size);
+						</p>
+						<p style="line-break: loose">
+							line-break: loose;<br>
+							really really really really really really really really really really really really really really really long line
+						</p>
+						<p style="line-break: strict">
+							line-break: strict;<br>
+							really really really really really really really really really really really really really really really long line
+						</p>
+						<p style="line-height: 30px">
+							line-height: 30px;<br>
+							line-height: 30px;
+						</p>
+						<p style="line-height: -30px">
+							line-height: -30px;<br>
+							line-height: -30px;
+						</p>						
+						<p style="line-height: 2em">
+							line-height: 2em;<br>
+							line-height: 2em;
+						</p>
+						<p style="line-height: 200%">
+							line-height: 200%;<br>
+							line-height: 200%;
+						</p>
+						<p style="line-height: 4vw">
+							line-height:4vw;<br>
+							line-height:4vw;
+						</p>
+						<p style="line-height: 4vh">
+							line-height:4vh;<br>
+							line-height:4vh;
+						</p>
+						<p style="line-height: calc(1em + 10px)">
+							line-height: calc(1em + 10px);<br>
+							line-height: calc(1em + 10px);
+						</p>
+						<p style="line-height: var(--size)">
+							line-height: var(--size);<br>
+							line-height: var(--size);
+						</p>
+						<p style="overflow-wrap: break-word">
+							overflow-wrap: break-word;<br>
+							reallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallylongword
+						</p>
+						<p style="-moz-tab-size: 2; -o-tab-size: 2; tab-size: 2; white-space: pre-wrap">
+tab-size: 2; white-space: pre-wrap;
+	test
+		test
+						</p>
+						<p style="text-align: center" align="center">
+							text-align:center;
+						</p>	
+						<p style="text-align-last: right; text-align: left" align="left">
+							text-align: left; text-align-last: right; -moz-text-align-last:right;<br>
+							really really really really really really really really really really really really really really really long line
+						</p>
+						<p style="text-combine-horizontal: digits 4; writing-mode: tb-rl">
+							text-combine-horizontal: digits 4; -ms-text-combine-horizontal: digits 4; writing-mode: tb-rl;<br>
+							1 12 123 1234 12345 test
+						</p>
+						<p style="text-decoration: overline">
+							text-decoration: overline;
+						</p>		
+						<p style="text-decoration: line-through">
+							text-decoration: line-through;
+						</p>	
+						<p style="text-decoration: underline">
+							text-decoration: underline;
+						</p>	
+						<p style="-moz-text-decoration-color: red; text-decoration-color: red; text-decoration: underline">
+							text-decoration-color: red; -moz-text-decoration-color: red; text-decoration: underline;
+						</p>
+						<p style="-moz-text-decoration-line: overline; text-decoration-line: overline; text-decoration: underline">
+							text-decoration-line: overline; -moz-text-decoration-line: overline;
+						</p>
+						<p style="-moz-text-decoration-style: wavy; -webkit-text-decoration-style: wavy; text-decoration-style: wavy; text-decoration: underline">
+							text-decoration-style: wavy; -moz-text-decoration-style: wavy; text-decoration: underline;
+						</p>
+						<p style="text-indent: 30px">
+							text-indent: 30px;
+						</p>
+						<p style="text-indent: -30px">
+							text-indent: -30px;
+						</p>	
+						<p style="text-indent: 2em">
+							text-indent: 2em;
+						</p>
+						<p style="text-indent: 20%">
+							text-indent: 20%;
+						</p>
+						<p style="text-indent: 4vw">
+							text-indent:4vw;
+						</p>
+						<p style="text-indent: 4vh">
+							text-indent:4vh;
+						</p>
+						<p style="text-indent: calc(1em + 10px)">
+							text-indent: calc(1em + 10px);
+						</p>
+						<p style="text-indent: var(--size)">
+							text-indent: var(--size);
+						</p>
+						<p style="text-align: justify; text-justify: inter-word" align="justify">
+							text-justify: inter-word; text-align: justify; really really really really really really really really really really really really really really really long line
+						</p>
+						<p style="text-orientation: upright; writing-mode: vertical-rl">
+							text-orientation: upright;<br>
+							webkit moz ms
+						</p>
+						<p style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 200px">
+							text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width:200px;
+						</p>
+						<p style="overflow: hidden; text-overflow: clip; white-space: nowrap; width: 200px">
+							text-overflow: clip; overflow: hidden; white-space: nowrap; width:200px;
+						</p>
+						<p style="text-shadow: 1px 1px #FF0000">
+							text-shadow: 1px 1px #FF0000;
+						</p>
+						<p style="text-shadow: -1px -1px #FF0000">
+							text-shadow: -1px -1px #FF0000;
+						</p>
+						<p style="text-transform: uppercase">
+							text-transform: uppercase;
+						</p>
+						<p style="text-transform: lowercase">
+							text-transform: LOWERcase;
+						</p>
+						<p style="text-transform: capitalize">
+							text-transform: capitalize;
+						</p>
+						<p style="text-decoration: underline; text-underline-position: above">
+							text-underline-position: above; text-decoration: underline;
+						</p>
+						<p style="direction: rtl; unicode-bidi: bidi-override">
+							unicode-bidi: bidi-override; direction: rtl;
+						</p>
+						<p style="white-space: pre">
+							white-space: pre;     space<br>
+							really really really really really really really really really really really really really really really long line
+						</p>
+						<p style="white-space: nowrap">
+							white-space: nowrap;     space<br>
+							really really really really really really really really really really really really really really really long line
+						</p>
+						<p style="white-space: pre-wrap">
+							white-space: pre-wrap;     space<br>
+							really really really really really really really really really really really really really really really long line
+						</p>
+						<p style="white-space: pre-line">
+							white-space: pre-line;     space<br>
+							really really really really really really really really really really really really really really really long line
+						</p>												
+						<p style="width: 200px; word-break: break-all">
+							word-break: break-all; width:200px;
+						</p>
+						<p style="word-spacing: 30px">
+							word-spacing: 30px;
+						</p>
+						<p style="word-spacing: -30px">
+							word-spacing: -30px;
+						</p>	
+						<p style="word-spacing: 2em">
+							word-spacing: 2em;
+						</p>
+						<p style="word-spacing: 20%">
+							word-spacing: 20%;
+						</p>
+						<p style="word-spacing: 4vw">
+							word-spacing:4vw;
+						</p>
+						<p style="word-spacing: 4vh">
+							word-spacing:4vh;
+						</p>
+						<p style="word-spacing: calc(1em + 10px)">
+							word-spacing: calc(1em + 10px);
+						</p>
+						<p style="word-spacing: var(--size)">
+							word-spacing: var(--size);
+						</p>
+						<p style="word-wrap: break-word">
+							word-wrap: break-word;<br>
+							reallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallyreallylongword
+						</p>
+						<p style="text-orientation: upright; writing-mode: vertical-rl">
+							writing-mode: tb-rl;
+						</p>
+						<p style="font-family: 'Open Sans'">
+							@font-face font-family: 'Open Sans';
+						</p>
+						<p style="font-family: 'Raleway'">
+							@inport font-family: 'Raleway';
+						</p>						
+<p style="font-variant-alternate: styleset(test-style)">
+<!--need to read up more on this but it's getting late-->
+	@font-feature-values:
+</p>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
