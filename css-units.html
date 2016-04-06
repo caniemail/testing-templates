@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--     
+ , _                           
+/|/_)      o |\_|_    |)       
+ |  \|  |  | |/ |     |/\_|  | 
+ |(_/ \/|_/|/|_/|_/    \/  \/|/...
+                             (| 
+
+              RebelmailReb            
+          RebelmailRebelmailR
+        RebelmailRebelmailRebel        
+      Rebelma             Rebelma       
+     Rebelm                 Rebelm      
+    Rebel    RebelmailRebe    Rebel     
+   Rebel     RebelmailRebelm   Rebel    
+   Rebe      RebelmailRebelma   Rebe  
+  Rebel     Rebel        Rebe    Rebe   
+  Rebe      Rebe         Rebe    Rebe   
+  Rebe      RebelmailRebelmai    Rebel  
+  Rebe      RebelmailRebelma     Rebel  
+  Rebe     Rebe       Rebe       Rebel
+  Rebe     Rebe       Rebe       Rebe   
+  Rebel    Rebe       Rebel     Rebel   
+   Rebel  Rebel        Rebel  Rebelm    
+    Rebel               RebelmailRe    
+     Rebel               Rebelmail       
+      Rebelm                            
+       Rebelmail       Rebelmail         
+         RebelmailRebelmailRebe          
+            RebelmailRebelma    
+
+              __         __                _ __
+   ________  / /_  ___  / /___ ___  ____ _(_) /
+  / ___/ _ \/ __ \/ _ \/ / __ `__ \/ __ `/ / / 
+ / /  /  __/ /_/ /  __/ / / / / / / /_/ / / /  
+/_/   \___/_.___/\___/_/_/ /_/ /_/\__,_/_/_/   
+
+-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->  
+  
+<title>CSS unit test</title>
+
+<style>
+div{
+  --width2: 250px;
+    --font2:20px;
+  margin:2px;
+}
+.var{
+    width:var(--width2);
+  font-size:var(--font2);
+}
+</style>
+
+</head>
+<body style="--width1: 250px;--font1:20px;">
+
+
+  <div style="--width1: 250px;--font1:20px;">
+
+Width and font-size on Divs
+
+    <div style="width:50px;font-size:50px;background:red;color:white;">
+    50px div
+    </div>
+    <div style="width:50%;font-size:50%;background:red;color:white;">
+    50% div
+    </div>
+    <div style="width:5em;font-size:5em;background:red;color:white;">
+    5em div
+    </div>
+    <div style="width:5rem;font-size:5rem;background:red;color:white;">
+    5rem div
+    </div>
+    <div style="width:15vw;font-size:15vw;background:red;color:white;">
+    5vw div
+    </div>
+    <div style="width:15vh;font-size:15vh;background:red;color:white;">
+    5vh div
+    </div>
+    <div style="width:15vmin;font-size:15vmin;background:red;color:white;">
+    5vmin div
+    </div>
+    <div style="width:15vmax;font-size:15vmax;background:red;color:white;">
+    5vmax div
+    </div>
+    <div style="width:5ex;font-size:5ex;background:red;color:white;">
+    5ex div
+    </div>
+    <div style="width:50pt;font-size:50pt;background:red;color:white;">
+    50pt div
+    </div>
+    <div style="width:5ch;font-size:5ch;background:red;color:white;">
+    5ch div
+    </div>
+    <div style="width:3cm;font-size:3cm;background:red;color:white;">
+    3cm div
+    </div>
+    <div style="width:30mm;font-size:30mm;background:red;color:white;">
+    30mm div
+    </div>
+    <div style="width:1in;font-size:1in;background:red;color:white;">
+    1in div
+    </div>
+    <div style="width:calc(25px + 25px);font-size:calc(25px + 25px);background:red;color:white;">
+    Calc div
+    </div>
+    <div style="width:var(--width1);font-size:var(--font1);background:red;color:white;">
+    Var inline div
+    </div>
+    <div class="var" style="background:red;color:white;">
+    Var class div
+    </div>
+
+If the table fits the text it's not working
+
+    <table border="0" cellspacing="0" cellpadding="0" style="width:50px;background:blue;color:white;"><tr><td>
+    px
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:50%;background:blue;color:white;"><tr><td>
+    %
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:5em;background:blue;color:white;"><tr><td>
+    em
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:5rem;background:blue;color:white;"><tr><td>
+    rem
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:15vw;background:blue;color:white;"><tr><td>
+    vw
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:15vh;background:blue;color:white;"><tr><td>
+    vh
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:15vmin;background:blue;color:white;"><tr><td>
+    vmin
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:15vmax;background:blue;color:white;"><tr><td>
+    vmax
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:5ex;background:blue;color:white;"><tr><td>
+    ex
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:50pt;background:blue;color:white;"><tr><td>
+    pt
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:5ch;background:blue;color:white;"><tr><td>
+    ch
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:3cm;background:blue;color:white;"><tr><td>
+    cm
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:30mm;background:blue;color:white;"><tr><td>
+    mm
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:1in;background:blue;color:white;"><tr><td>
+    in
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:calc(25px + 25px);background:blue;color:white;"><tr><td>
+    Calc 
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" style="width:var(--width1);background:blue;color:white;"><tr><td>
+    Var inline 
+    </td></tr></table>
+    <table border="0" cellspacing="0" cellpadding="0" class="var" style="background:blue;color:white;"><tr><td>
+    Var class 
+    </td></tr></table>
+  </div>
+</body>
+</html>
